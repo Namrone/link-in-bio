@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img src="/images/cropped.jpg" alt="Anime Toddler">
+        <img  class="avatar-image" src="/images/cropped.jpg" alt="Anime Toddler">
       </div>
       <div class="name-row">
         Norman Cheng
@@ -19,10 +20,10 @@
       </div>
       <div class="links-container">
         <div class="link">
-          <img src="/images/happybop.jpg"><a target="_blank" href="https://myanimelist.net/profile/phooee">My Anime List</a>
+          <img class="thumbnail" src="/images/happybop.jpg" alt="Gon and Killua"><a class="link-text" target="_blank" href="https://myanimelist.net/profile/phooee">My Anime List</a>
         </div>
         <div class="link">
-          <img src="/images/poppin.jpg"><a target="_blank" href="https://open.spotify.com/user/uqwjif6rzcpavqatte8b6fbr5?si=1fbfc1670f1e4436">Spotify Albums</a>
+          <img class="thumbnail" src="/images/poppin.jpg" alt="A record player"><a class="link-text" target="_blank" href="https://open.spotify.com/user/uqwjif6rzcpavqatte8b6fbr5?si=1fbfc1670f1e4436">Spotify Albums</a>
         </div>
       </div>
     </div>
@@ -30,7 +31,102 @@
 </html>
 
 <style>
-  *{
-    border: 1px red dashed;
+  html{
+    min-height: 100%;
+  }
+
+  body{
+    min-height: 100%;
+    padding: 40px 0;
+    background: linear-gradient(90deg, #2f57d0, #227dd3, #3e9cd3, #6eb7d1, #83bbd2, #7dabd1, #7d9bcc, #8289c3);
+    color: #f0f0f0;
+    font-family: "Impact";
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .main-container{
+    width: 640px;
+    margin: auto;
+  }
+
+  .image-row, .link{
+    margin-bottom: 20px;
+  }
+
+  .name-row, .socials{
+    margin-bottom: 30px;
+  }
+
+  .image-row, .name-row{
+    text-align: center;
+  }
+
+  .name-row{
+    font-family: "Georgia";
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .socials{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link{
+    display: flex;
+    align-items: center;
+  }
+
+  .link-text{
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .avatar-image{
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+  }
+
+  .thumbnail{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    object-fit: cover;
+  }
+
+  .link{
+    background: rgba(197, 212, 229, 0.8);
+    border-radius: 1000px;
+    padding: 5px;
+    padding-right: 53px;
+    box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+  }
+
+  .fa-brands{
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .fa-spotify{
+    background: #1db954;
+    color: #ffff;
+  }
+
+  .fa-github{
+    background: black;
+    color: #FAFBFC;
+  }
+
+  .fa-linkedin{
+    background: #ffff;
+    color: #0a66c2;
   }
 </style>
