@@ -1,3 +1,3 @@
 # static-html-template
 
-Use this template to create static HTML websites and deploy them on Render.
+A basic static website assignment from DPI intro course to practice html & css
