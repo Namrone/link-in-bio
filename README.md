@@ -1,3 +1,3 @@
 # static-html-template
 
-A basic static website assignment from DPI intro course to practice html & css
+A static website to display links about me and links I like
